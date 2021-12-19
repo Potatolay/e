@@ -486,6 +486,20 @@ add.Part0 = plr.Character["SeeMonkey"].Handle
 add.Part1 = plr.Character["Torso"]
 add.C1 = CFrame.new(0,0,0)*CFrame.Angles(math.rad(90),0,0)
 
+game.Players.LocalPlayer.Character["Big Goose Fur Hood Black"].Handle.Touched:Connect(function(Object)
+    if Object.Parent:FindFirstChild("Humanoid") then
+
+                            v.CFrame = Object.Parent:FindFirstChild("HumanoidRootPart").CFrame
+
+       end
+end)
+game.Players.LocalPlayer.Character["Left Arm"].Touched:Connect(function(Object)
+    if Object.Parent:FindFirstChild("Humanoid") then
+
+                            v.CFrame = Object.Parent:FindFirstChild("HumanoidRootPart").CFrame
+
+       end
+end)
 function swait()
     game:GetService('RunService').Heartbeat:wait()
 end
